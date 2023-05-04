@@ -1,0 +1,36 @@
+Programa → ':' 'DEC' ListaDeclaracoes ':' 'PROG' ListaComandos;
+ 
+ListaDeclaracoes → Declaracao ListaDeclaracoes | Declaracao;
+
+Declaracao → VARIAVEL ':' TipoVar;
+
+TipoVar → 'INT' | 'REAL';
+
+ExpressaoAritmetica → ExpressaoAritmetica '+' TermoAritmetico | ExpressaoAritmetica '-' TermoAritmetico | TermoAritmetico;
+
+TermoAritmetico → TermoAritmetico '*' FatorAritmetico | TermoAritmetico '/' FatorAritmetico | FatorAritmetico;
+
+FatorAritmetico → NUMINT | VARIAVEL | '(' ExpressaoAritmetica ')'
+
+ExpressaoRelacional → ExpressaoRelacional OperadorBooleano TermoRelacional | TermoRelacional;
+
+TermoRelacional → ExpressaoAritmetica OP_REL ExpressaoAritmetica | '(' ExpressaoRelacional ')';
+
+OperadorBooleano → 'E' | 'OU';
+
+ListaComandos → Comando ListaComandos | Comando;
+
+Comando → ComandoAtribuicao | ComandoEntrada | ComandoSaida | ComandoCondicao | ComandoRepeticao | SubAlgoritmo;
+
+ComandoAtribuicao → VARIAVEL ':=' ExpressaoAritmetica;
+
+ComandoEntrada → 'LER' VARIAVEL;
+
+ComandoSaida → 'IMPRIMIR'  (VARIAVEL | CADEIA);
+
+ComandoCondicao → 'SE' ExpressaoRelacional 'ENTAO' Comando | 'SE' ExpressaoRelacional 'ENTAO' Comando 'SENAO' Comando;
+
+ComandoRepeticao → 'ENQUANTO' ExpressaoRelacional Comando;
+
+SubAlgoritmo → 'INI' ListaComandos 'FIM';
+
