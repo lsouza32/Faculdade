@@ -1,0 +1,13 @@
+Corante_para_amaciante 100.860 L
+Essencia_para_amaciante 94.000 L
+Quatercap_CDHT-75 100.720 KG
+Mistura_de_Isotiazolinonas 100.986 KG
+Acido_sulfonico 93.000 Kg
+Amida_60 99.000 L
+Lauril_ester_sulfato_de_sodio 99.000 Kg
+Hidroxido_de_sodio 98.300 Kg
+Formol_37 99.900 Kg
+Cloreto_de_sodio 99.600 Kg
+Corante_para_detergente 99.000 L
+Essencia_para_detergente 99.000 L
+Agua 322.200 L

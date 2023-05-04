@@ -1,0 +1,5 @@
+Essencia_para_amaciante 1 L
+Corante_para_amaciante 0.02 L
+Quatercap_CDHT-75 0.04 KG
+Mistura_de_Isotiazolinonas 0.002 KG
+Agua 1 L
